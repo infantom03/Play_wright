@@ -34,7 +34,7 @@ test('First test ', async ({ browser }) => {
 
 
 
-test('Child window or Tab handling', async ({ browser }) => {
+test.only('Child window or Tab handling', async ({ browser }) => {
     const context = await browser.newContext();
     const page = await context.newPage();
     const userName = page.locator("input#username");
